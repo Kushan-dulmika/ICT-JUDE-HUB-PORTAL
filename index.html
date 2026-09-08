@@ -323,6 +323,89 @@ font-size:9px;
 
 
 
+
+
+		
+
+
+
+
+
+		
+/* 1. මූලික Box Sizing සහ අකුරු පාලනය */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden; /* තිරයෙන් පිටට යන කොටස් පෙන්වීම වළක්වයි */
+}
+
+/* 2. පින්තූර සහ මාධ්‍ය (Media) ස්වයංක්‍රීයව ප්‍රමාණය වෙනස් වීම */
+img, video, canvas, svg {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* 3. හැම ප්‍රධාන කොටුවක්ම (Container) මොබයිල්වලට හැඩගැසීම */
+.container, section, header, footer {
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* 4. Flex හෝ Grid මඟින් සාදා ඇති කොටු එක යට එක වැටීමට සැලැස්වීම */
+@media (max-width: 768px) {
+    /* Flex හෝ Grid අයිතම මොබයිල්වලදී තිරය පුරා පෙන්වීම */
+    .row, .grid, .flex-container {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 15px !important;
+    }
+
+    /* Column ප්‍රමාණයන් 100% කිරීම */
+    .col, [class*="col-"] {
+        width: 100% !important;
+        flex: 1 1 100% !important;
+    }
+
+    /* මොබයිල් සඳහා පොදු අකුරු ප්‍රමාණයන් මදක් කුඩා කිරීම */
+    h1 { font-size: 1.8rem !important; }
+    h2 { font-size: 1.5rem !important; }
+    h3 { font-size: 1.2rem !important; }
+    
+    /* වගු (Tables) මඟ හැරී යාම වැළැක්වීමට Scrollable කිරීම */
+    table {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
+
+
+
+
+
+
+
+
+
+		
+
+
         :root {
             --primary: #2563eb;
             --primary-light: #dbeafe;
