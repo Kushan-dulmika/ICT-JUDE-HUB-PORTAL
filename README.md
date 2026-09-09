@@ -7,7 +7,7 @@ An all-in-one web platform designed for ICT students to access learning material
 - **📚 Comprehensive Class Portal:** Easy access to theory lessons, video playlists, and structured learning paths.
 - **📄 Past Papers & Weekly Tests:** Organized repository of past examination papers and weekly assessment sheets.
 - **📊 Student Progress Tracker:** Interactive charts and reports for students to monitor their marks and overall performance.
-- **🤖 Integrated AI Chat Bot:** A smart assistant to help students with portal navigation and basic lesson queries.
+- **🤖 Integrated AI Chat Bot:** A smart assistant to help students with portal navigation and basic lesson queries and any questions.
 - **📱 Responsive & Modern UI:** Designed with clean layouts for a smooth experience across mobile and desktop devices.
 
 ## 🛠️ Built With
